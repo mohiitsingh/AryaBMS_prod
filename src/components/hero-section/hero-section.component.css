@@ -23,15 +23,56 @@
   color: white;
 }
 
-.test {
-  background-color: red !important;
-}
-
+/* For screens 768px and up (tablets and larger devices) */
 @media (min-width: 768px) {
   .hero-section h1 {
     font-size: 3.5rem;
   }
   .hero-section p {
     font-size: 1.2rem;
+  }
+
+  .hero-section .btn {
+    padding: 10px 25px;
+  }
+}
+
+/* For small screens (less than 768px) */
+@media (max-width: 767px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .hero-section .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .hero-section .container-fluid {
+    padding: 3rem 1rem;
+  }
+
+  .hero-section img {
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Limit image width for small screens */
+  }
+}
+
+/* For very small screens (less than 480px) */
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .btn {
+    padding: 8px 15px;
   }
 }

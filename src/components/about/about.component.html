@@ -1,0 +1,125 @@
+<!-- hero-section.component.html -->
+<section
+  class="about-section d-flex p-5"
+  style="background-color: #f3ecec81"
+  id="about"
+>
+  <div class="container-fluid ">
+    <div class="row d-flex  justify-content-between">
+      <!-- Left Content -->
+      <div class="col-lg-8 col-md-12 mb-3 text-left ">
+        <h2>Arya's BMS & IA Training Institute</h2>
+        <div
+          class="my-4 d-flex flex-wrap justify-content-between button-container col-lg-8 col-md-12"
+        >
+          <div class="button-div">
+            <button
+              class="text-body-secondary btn"
+              [ngClass]="{ 'active-button': activeContent === 'institute' }"
+              (click)="showContent('institute')"
+            >
+              Institute
+            </button>
+          </div>
+          <div class="button-div">
+            <button
+              class="text-body-secondary btn"
+              [ngClass]="{ 'active-button': activeContent === 'founder' }"
+              (click)="showContent('founder')"
+            >
+              Founder
+            </button>
+          </div>
+          <div class="button-div">
+            <button
+              class="text-body-secondary btn"
+              [ngClass]="{ 'active-button': activeContent === 'mission' }"
+              (click)="showContent('mission')"
+            >
+              Mission
+            </button>
+          </div>
+          <div class="button-div">
+            <button
+              class="text-body-secondary btn"
+              [ngClass]="{ 'active-button': activeContent === 'vision' }"
+              (click)="showContent('vision')"
+            >
+              Vision
+            </button>
+          </div>
+        </div>
+
+        <!-- Institute Content -->
+        <div *ngIf="activeContent === 'institute'">
+          <p>At Arya Institute :</p>
+          <ul class="">
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Specializes in
+              comprehensive Building Management Systems (BMS) training.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Focus on hands-on
+              learning with industry-standard machines and equipment.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Limited batch sizes
+              ensure personalized attention for each student.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Affordable training
+              with placement support and internships.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Strong industry
+              network to help students kickstart their BMS careers.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Founder Content -->
+        <div *ngIf="activeContent === 'founder'">
+          <p>Our Founder & Trainer: <strong>Mr. Neeraj Kumar</strong></p>
+          <ul>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Over 15 years of industry experience in BMS, including work in Dubai.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Passionate about bridging the gap between theory and real-world BMS applications.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Committed to delivering industry-relevant training to prepare students for successful careers.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Focused on providing high-quality education with practical experience.</li>
+          </ul>
+        </div>
+
+        <!-- Mission Content -->
+        <div *ngIf="activeContent === 'mission'">
+          <p>Our Mission :</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Provide high-quality, affordable BMS training.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Equip students with hands-on skills and industry knowledge to succeed in the BMS field.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Foster a learning environment with personalized guidance and focused attention.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Offer placement assistance, internships, and real-world exposure to ensure career growth.</li>
+          </ul>
+          
+        </div>
+
+        <!-- Vision Content -->
+        <div *ngIf="activeContent === 'vision'">
+          <p>Our Vision :</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Become a leading BMS training institute recognized for excellence in education.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Build strong industry partnerships to enhance learning opportunities and placements.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Empower passionate individuals with the skills and support to thrive in the BMS industry.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Shape the future of the BMS workforce through expert training and guidance.</li>
+          </ul>
+          
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-3 col-md-12 text-center ">
+        <div class="image-div" >
+            <img src="images/founder.jpg" alt="founder">
+            <p class="mt-1">Mr. Neeraj Kumar | Founder</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
