@@ -1,0 +1,25 @@
+.margin{
+    margin-left: 12%;
+}
+
+.navbar{
+    border-bottom: 0.1px solid orangered;
+}
+
+.navbar-brand{
+    color: orangered;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1124px) {
+    .margin{
+        margin-left: 5%;
+    }
+}
+
+
+@media  (max-width: 1080px) {
+    .margin{
+        margin-left: 0%;
+    }
+}
