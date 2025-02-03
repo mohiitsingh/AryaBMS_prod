@@ -15,9 +15,6 @@ a{
     font-size: 1.3rem;
 }
 
-.active{
-    background-color: red;
-}
 
 @media (max-width: 1124px) {
     .margin{
