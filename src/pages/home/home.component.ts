@@ -4,10 +4,12 @@ import { NavbarComponent } from "../../components/navbar/navbar.component";
 import { AboutComponent } from "../../components/about/about.component";
 import { CourseSectionComponent } from "../../components/course-section/course-section.component";
 import { ReviewComponent } from "../../components/reviews/reviews.component";
+import { ContactUsComponent } from "../../components/contact-us/contact-us.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-home',
-  imports: [HeroSectionComponent, NavbarComponent, AboutComponent, CourseSectionComponent, ReviewComponent],
+  imports: [HeroSectionComponent, NavbarComponent, AboutComponent, CourseSectionComponent, ReviewComponent, ContactUsComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -1,0 +1,81 @@
+<div class="container py-5" id="contact">
+    <h2 class="text-center mb-5">Contact Us</h2>
+  
+    <div class="row">
+      <!-- Left Column: Google Map and Address -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <!-- Google Map iframe (example) -->
+        <div class="map-container mb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.7995448570828!2d86.10999037444084!3d22.809890424233174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e578c27623d5%3A0xd24e58561370a5ba!2sARYA&#39;S%20BMS%20%26%20INDUSTRIAL%20AUTOMATION%20TRAINING%20INSTITUTE!5e0!3m2!1sen!2sin!4v1738577967184!5m2!1sen!2sin"
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          ></iframe>
+        </div>
+  
+        <!-- Address below map -->
+        <div class="address">
+          <p><strong>Our Institute Address:</strong></p>
+          <p>
+            6th Floor, Mahaveer Trade Center, Jamshedpur, Jharkhand, Tata Kandra
+            Road, Gamharia, Jamshedpur - 832108 (Gamharia)
+          </p>
+        </div>
+      </div>
+  
+      <!-- Right Column: Contact Form -->
+      <div class="col-12 col-md-6">
+        <div class="contact-form">
+          <form (submit)="onSubmit($event)">
+            <div class="form-group">
+              <label for="email" class="my-2">Email :</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                required
+                placeholder="Enter your email"
+                [(ngModel)]="formData.email"
+                name="email"
+              />
+            </div>
+  
+            <div class="form-group">
+              <label for="phone" class="my-2">Phone Number :</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                required
+                placeholder="Enter your phone number"
+                [(ngModel)]="formData.phone"
+                name="phone"
+              />
+            </div>
+  
+            <div class="form-group">
+              <label for="message" class="my-2">Message : </label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                required
+                placeholder="Enter your message"
+                [(ngModel)]="formData.message"
+                name="message"
+              ></textarea>
+            </div>
+  
+            <div class="mt-2 text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
