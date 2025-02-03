@@ -1,0 +1,32 @@
+<div class="container-fluid py-5" style="background-color: #f3ecec81">
+    <h2 class="text-center mb-4">What Our Students Say</h2>
+  
+    <!-- Reviews Section -->
+    <div class="carousel-container container">
+      <div class="row">
+        <!-- Show two reviews per slide on medium screens, one per slide on smaller screens -->
+        <div class="col-12 col-md-6" *ngFor="let review of reviews.slice(currentIndex, currentIndex + 2)">
+          <div class="card mb-4">
+            <img [src]="review.image" class="card-img-top" alt="Student Image">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{ review.name }}</h5>
+              <p class="card-text">{{ review.review }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Carousel Controls -->
+      <div class="d-flex justify-content-between">
+        <button (click)="goToPrevious()" class="carousel-control-prev btn-dark" aria-label="Previous">
+          <span class="carousel-control-prev-icon btn" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button (click)="goToNext()" class="carousel-control-next btn-dark" aria-label="Next">
+          <span class="carousel-control-next-icon btn" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
