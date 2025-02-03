@@ -15,6 +15,10 @@ li {
   padding: 0 !important;
 }
 
+.bi{
+  color: orangered !important;
+}
+
 /* Image container styling */
 .image-div {
   position: relative;

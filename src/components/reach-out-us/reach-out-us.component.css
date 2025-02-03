@@ -1,0 +1,11 @@
+.padding{
+    padding: 2rem;
+}
+
+
+@media  (max-width: 375px) {
+    .padding{
+        padding: 1rem;
+    }
+    
+}
