@@ -1,0 +1,52 @@
+.banner {
+    background-color: #333;
+    color: white;
+    height: 50px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide-text {
+    white-space: nowrap;
+    position: absolute;
+    animation: slide 10s linear infinite;
+  }
+
+  .golden{
+    color: gold;
+    display: inline;
+  }
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Ensure responsive scaling */
+  @media (max-width: 768px) {
+    .banner {
+      height: 40px;
+    }
+
+    .slide-text {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .banner {
+      height: 35px;
+    }
+
+    .slide-text {
+      font-size: 12px;
+    }
+  }

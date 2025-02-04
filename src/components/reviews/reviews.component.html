@@ -4,9 +4,8 @@
     <!-- Reviews Section -->
     <div class="carousel-container container">
       <div class="row">
-        <!-- Show two reviews per slide on medium screens, one per slide on smaller screens -->
         <div class="col-12 col-md-6" *ngFor="let review of reviews.slice(currentIndex, currentIndex + 2)">
-          <div class="card mb-4">
+          <div class="card mb-4 p-3">
             <img [src]="review.image" class="card-img-top" alt="Student Image">
             <div class="card-body">
               <h5 class="card-title text-center">{{ review.name }}</h5>
