@@ -1,0 +1,11 @@
+.card-title {
+    font-weight: bold;
+  }
+  
+  button {
+    min-width: 100px;
+  }
+
+  .bi{
+    color: orangered;
+  }

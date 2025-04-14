@@ -7,10 +7,11 @@ import { ReviewComponent } from "../../components/reviews/reviews.component";
 import { ContactUsComponent } from "../../components/contact-us/contact-us.component";
 import { FooterComponent } from "../../components/footer/footer.component";
 import { ReachOutUsComponent } from "../../components/reach-out-us/reach-out-us.component";
+import { WhyChooseUsComponent } from '../../components/why-choose-us/why-choose-us.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeroSectionComponent, NavbarComponent, AboutComponent, CourseSectionComponent, ReviewComponent, ContactUsComponent, FooterComponent, ReachOutUsComponent],
+  imports: [HeroSectionComponent, NavbarComponent, AboutComponent, CourseSectionComponent, ReviewComponent, ContactUsComponent, FooterComponent, ReachOutUsComponent, WhyChooseUsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  activeContent: string = 'institute'; 
+  activeContent: string = 'founder'; 
 
   showContent(content: string): void {
     this.activeContent = content;

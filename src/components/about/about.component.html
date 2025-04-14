@@ -14,7 +14,7 @@
         >
           <div class="button-div">
             <button
-              class="text-body-secondary btn"
+              class="text-body-secondary btn border"
               [ngClass]="{ 'active-button': activeContent === 'institute' }"
               (click)="showContent('institute')"
             >
@@ -23,7 +23,7 @@
           </div>
           <div class="button-div">
             <button
-              class="text-body-secondary btn"
+              class="text-body-secondary btn border"
               [ngClass]="{ 'active-button': activeContent === 'founder' }"
               (click)="showContent('founder')"
             >
@@ -32,7 +32,7 @@
           </div>
           <div class="button-div">
             <button
-              class="text-body-secondary btn"
+              class="text-body-secondary btn border"
               [ngClass]="{ 'active-button': activeContent === 'mission' }"
               (click)="showContent('mission')"
             >
@@ -41,7 +41,7 @@
           </div>
           <div class="button-div">
             <button
-              class="text-body-secondary btn"
+              class="text-body-secondary btn border"
               [ngClass]="{ 'active-button': activeContent === 'vision' }"
               (click)="showContent('vision')"
             >
@@ -53,14 +53,16 @@
         <!-- Institute Content -->
         <div *ngIf="activeContent === 'institute'">
           <p>At Arya Institute :</p>
-          <ul class="">
+          <ul class="background-color">
             <li>
-              <i class="bi bi-arrow-right-circle mx-2"></i>Specializes in
-              comprehensive Building Management Systems (BMS) training.
+              <i class="bi bi-arrow-right-circle mx-2"></i>ARYA’s Training Institute is an ISO 9001:2015 certified institute.
             </li>
             <li>
-              <i class="bi bi-arrow-right-circle mx-2"></i>Focus on hands-on
-              learning with industry-standard machines and equipment.
+              <i class="bi bi-arrow-right-circle mx-2"></i>Offers 100% practical training in: <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              BMS software programming <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              ELV/Electrical Panel and Switchgear wiring through workshop classes
             </li>
             <li>
               <i class="bi bi-arrow-right-circle mx-2"></i>Limited batch sizes
@@ -79,11 +81,13 @@
 
         <!-- Founder Content -->
         <div *ngIf="activeContent === 'founder'">
-          <p>Our Founder & Trainer: <strong>Mr. Neeraj Kumar</strong></p>
+          <p>Our Founder & Trainer: <strong>Mr. Niraj Kumar</strong></p>
           <ul>
             <li>
               <i class="bi bi-arrow-right-circle mx-2"></i>Over 15 years of
-              industry experience in BMS, including work in Katar, Oman & Dubai.
+              industry experience in BMS,The expert has worked as a BMS designer
+              and commissioning engineer in Gulf Countries such as Qatar, UAE,
+              and Kuwait.
             </li>
             <li>
               <i class="bi bi-arrow-right-circle mx-2"></i>Passionate about
@@ -104,31 +108,21 @@
         <!-- Mission Content -->
         <div *ngIf="activeContent === 'mission'">
           <p>Our Mission :</p>
-          We are dedicated to providing high-quality, affordable BMS training
-          that empowers students to succeed in the field. Our curriculum focuses
-          on equipping students with practical, hands-on skills and
-          industry-relevant knowledge, ensuring they are prepared for the
-          challenges of the BMS sector. We foster a supportive learning
-          environment with personalized guidance and individual attention,
-          helping each student reach their full potential. In addition, we offer
-          placement assistance, internships, and valuable real-world exposure to
-          help students kickstart their careers and achieve long-term growth in
-          the BMS industry.
+          Our mission is to provide affordable, 100% practical training in
+          Building Management Systems (BMS) and Industrial Automation using
+          advanced infrastructure and real-time equipment. With over 15 years of
+          industry experience, we aim to develop skilled professionals ready for
+          immediate employment as BMS Operators, Technicians, and Commissioning
+          Engineers—meeting the growing demand, especially in Gulf countries.
         </div>
 
         <!-- Vision Content -->
         <div *ngIf="activeContent === 'vision'">
           <p>Our Vision :</p>
-          Our institute strives to be a leading BMS training center, recognized
-          for its commitment to excellence in education. We focus on providing
-          comprehensive training that equips individuals with the skills and
-          knowledge necessary to excel in the dynamic BMS industry. By building
-          strong partnerships with industry leaders, we enhance learning
-          opportunities and create a seamless pathway for placements. Our
-          mission is to empower passionate individuals, offering them the
-          support and guidance they need to thrive. Through expert training and
-          industry insights, we are shaping the future of the BMS workforce,
-          preparing the next generation of leaders to succeed.
+          To be a globally recognized center of excellence in BMS & Industrial
+          Automation training, empowering individuals with practical skills and
+          industry-relevant knowledge to build successful careers in India and
+          abroad
         </div>
       </div>
 
@@ -136,7 +130,7 @@
       <div class="col-lg-3 col-md-12 text-center">
         <div class="image-div">
           <img src="images/founder.jpg" alt="founder" />
-          <p class="mt-1">Mr. Neeraj Kumar | Founder</p>
+          <p class="mt-1">Mr. Niraj Kumar | Founder</p>
         </div>
       </div>
     </div>

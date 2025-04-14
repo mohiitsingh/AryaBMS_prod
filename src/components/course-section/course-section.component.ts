@@ -11,12 +11,30 @@ import { CommonModule } from '@angular/common';
 export class CourseSectionComponent {
   courses = [
     {
-      heading: 'Building Management Systems (BMS) Certification Program',
-      description: "Learn core BMS concepts with hands-on training on real systems. Gain industry-relevant skills and secure internship opportunities to kickstart your career.",
+      heading: 'BMS Engineer :',
+      description: `Basic training of control panel & switchgear, panel drawing, panel components 
+(Relay/Contactor/VFD/Timer Relay etc.), BMS schematic drawing, BMS Layout drawing, DDC 
+panel drawing, BMS field device installation, cabling and termination`,
     },
     {
-      heading: 'Advanced BMS Systems & Automation Training',
-      description: 'Specialize in advanced BMS technologies and automation. Master system integration and troubleshooting to advance your career in the BMS industry.',
+      heading: 'BMS Technician',
+      description: `Basic training of control panel & switchgear, panel drawing, panel components
+(Relay/Contactor/VFD/Timer Relay etc.), BMS schematic drawing, BMS Lay
+`
     },
+    {
+      heading: 'BMS Operator:',
+      description: `Basic training of control panel & switchgear, panel drawing, panel components
+(Relay/Contactor/VFD/Timer Relay etc.), BMS schematic drawing, DDC panel drawing,
+BMS field device installation, cabling , tagging and termination
+`
+    },
+    {
+      heading: 'Control Panel Wiring Technician',
+      description: `Basic training of control panel & switchgear, panel drawing, panel components
+(Relay/Contactor/VFD/Timer Relay etc.), Panel wiring (DOL, STAR/DELTA, VFD,
+DDC/PLC)
+`
+    }
   ];
 }
